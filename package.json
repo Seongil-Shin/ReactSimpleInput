@@ -13,9 +13,18 @@
       "example": "examples",
       "lib": "lib"
    },
+   "homepage": "https://github.com/Seongil-Shin/ReactSimpleInput",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
    },
-   "author": "",
+   "author": {
+      "name": "Seongil Shin",
+      "email": "callmeshin75@gmail.com",
+      "url": "https://github.com/Seongil-Shin/ReactSimpleInput"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/Seongil-Shin/ReactSimpleInput"
+   },
    "license": "GPL-3.0"
 }
