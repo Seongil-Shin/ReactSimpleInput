@@ -1,0 +1,21 @@
+{
+   "name": "@callmeshin/react-simple-input",
+   "version": "1.0.0",
+   "description": "Simple textInput element styled like material-ui.",
+   "keywords": [
+      "react",
+      "textInput",
+      "input",
+      "material-ui"
+   ],
+   "main": "index.js",
+   "directories": {
+      "example": "examples",
+      "lib": "lib"
+   },
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "",
+   "license": "GPL-3.0"
+}
