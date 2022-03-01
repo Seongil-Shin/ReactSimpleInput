@@ -1,0 +1,61 @@
+.container {
+   position: relative;
+}
+
+.form_field {
+   width: 100%;
+   padding-top: 0.25rem;
+   padding-bottom: 0.25rem;
+   border-width: 0;
+   border-bottom-width: 1px;
+   border-color: #acabaf;
+
+   background-color: inherit;
+
+   transition-property: all;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 300ms;
+}
+
+.form_field:focus {
+   border-color: #ff7075;
+   outline: none;
+}
+.form_field:focus ~ .form_label {
+   top: -1.2rem;
+   font-size: 1rem;
+   font-weight: 700;
+   color: #ff7075;
+}
+.form_field:not(:focus) ~ .form_label {
+   color: "#acabaf";
+}
+
+.form_field::placeholder {
+   color: transparent;
+}
+.form_field:placeholder-shown ~ .form_label {
+   font-size: 1rem;
+   top: 0;
+   cursor: text;
+}
+.form_field:not(:placeholder-shown) ~ .form_label {
+   top: -1.2rem;
+   font-size: 1rem;
+}
+
+.form_label {
+   display: block;
+   position: absolute;
+   user-select: none;
+
+   transition-property: all;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 150ms;
+}
+
+.form_error {
+   text-align: left;
+   font-size: 0.75rem; /* 12px */
+   line-height: 1rem; /* 16px */
+}

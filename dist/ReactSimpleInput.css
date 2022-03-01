@@ -6,6 +6,7 @@
    width: 100%;
    padding-top: 0.25rem;
    padding-bottom: 0.25rem;
+   border-width: 0;
    border-bottom-width: 1px;
    border-color: #acabaf;
 
@@ -18,6 +19,7 @@
 
 .form_field:focus {
    border-color: #ff7075;
+   outline: none;
 }
 .form_field:focus ~ .form_label {
    top: -1.2rem;

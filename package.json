@@ -1,5 +1,5 @@
 {
-   "name": "@callmeshin/react-simple-input",
+   "name": "@callmeshin75/react-simple-input",
    "version": "0.1.0",
    "description": "Simple textInput element styled like material-ui.",
    "dependencies": {
@@ -7,16 +7,18 @@
       "react-dom": "^17.0.2",
       "react-scripts": "5.0.0"
    },
-   "main": "index.js",
+   "module": "dist/ReactSimpleInput.js",
+   "main": "dist/ReactSimpleInput.js",
    "directories": {
       "example": "examples",
-      "lib": "lib"
+      "lib": "src/lib"
    },
    "homepage": "https://github.com/Seongil-Shin/ReactSimpleInput",
    "scripts": {
       "start": "react-scripts start",
       "build": "react-scripts build",
-      "eject": "react-scripts eject"
+      "eject": "react-scripts eject",
+      "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
    },
    "eslintConfig": {
       "extends": [
@@ -37,7 +39,7 @@
       ]
    },
    "author": {
-      "name": "Seongil Shin",
+      "name": "callmeshin75",
       "email": "callmeshin75@gmail.com",
       "url": "https://github.com/Seongil-Shin/ReactSimpleInput"
    },

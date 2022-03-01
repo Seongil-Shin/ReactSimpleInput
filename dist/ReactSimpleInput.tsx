@@ -6,7 +6,7 @@ interface IProps {
    errorColor?: string;
 }
 
-const CustomInput = ({
+const ReactSimpleInput = ({
    id = "react-simple-input",
    error,
    errorColor,
@@ -27,7 +27,6 @@ const CustomInput = ({
             htmlFor={id}
             className="form_label"
             style={{
-               ...props.style,
                color: error && (errorColor || "#e81e25"),
                fontWeight: error ? 600 : 500,
             }}>
@@ -40,4 +39,4 @@ const CustomInput = ({
    );
 };
 
-export default React.memo(CustomInput);
+export default React.memo(ReactSimpleInput);
