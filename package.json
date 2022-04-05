@@ -1,14 +1,15 @@
 {
-   "name": "@callmeshin75/react-simple-input",
-   "version": "0.1.0",
+   "name": "react-simple-material-input",
+   "version": "0.1.2",
    "description": "Simple textInput element styled like material-ui.",
-   "dependencies": {
-      "react": "^17.0.2",
-      "react-dom": "^17.0.2",
-      "react-scripts": "5.0.0"
-   },
-   "module": "dist/ReactSimpleInput.js",
+   "types": "dist/ReactSimpleInput.d.ts",
    "main": "dist/ReactSimpleInput.js",
+   "keywords": [
+      "react",
+      "input",
+      "simple",
+      "material"
+   ],
    "directories": {
       "example": "examples",
       "lib": "src/lib"
@@ -16,10 +17,12 @@
    "homepage": "https://github.com/Seongil-Shin/ReactSimpleInput",
    "scripts": {
       "start": "react-scripts start",
-      "build": "react-scripts build",
-      "eject": "react-scripts eject",
-      "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
+      "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.css dist/",
+      "build": "rm -rf ./dist && tsc && yarn copy-files",
+      "prepare": "yarn build",
+      "eject": "react-scripts eject"
    },
+   "private": false,
    "eslintConfig": {
       "extends": [
          "react-app",
@@ -47,5 +50,15 @@
       "type": "git",
       "url": "https://github.com/Seongil-Shin/ReactSimpleInput"
    },
-   "license": "GPL-3.0"
+   "license": "GPL-3.0",
+   "devDependencies": {
+      "@types/react": "^17.0.43",
+      "@types/react-dom": "^17.0.14",
+      "copyfiles": "^2.4.1",
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0",
+      "react-scripts": "5.0.0",
+      "rimraf": "^3.0.2",
+      "typescript": "^4.6.3"
+   }
 }
