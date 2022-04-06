@@ -1,6 +1,6 @@
 {
    "name": "react-simple-material-input",
-   "version": "0.1.2",
+   "version": "0.1.3",
    "description": "Simple textInput element styled like material-ui.",
    "types": "dist/ReactSimpleInput.d.ts",
    "main": "dist/ReactSimpleInput.js",
